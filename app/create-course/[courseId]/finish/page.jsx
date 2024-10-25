@@ -43,7 +43,7 @@ function FinishScreen({ params }) {
           className="h-5 w-5 cursor-pointer"
           onClick={async () =>
             await navigator.clipboard.writeText(
-              process.env.NEXT_PUBLIC_HOST_NAME +
+              "https://ai-course-generator-woad.vercel.app/" +
                 "/course/" +
                 course?.courseId +
                 "/start"
